@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+ --blue: hsl(223, 47%, 23%);
+}
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.html{
+    font-size: 62.5%;
+}
+.body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.main-container{
+    background:var(--Very-pale-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.card-body .m-head{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+.card-body .content{
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.8;
+    padding: 0rem  0rem 1rem 0rem;
+}
+
+
+.btn{
+    border: none;
+    font-size: 1rem;
+    width: 90%;
+    margin:1rem 2rem 0 2rem;
+    text-align: center;
+    background:var(--Bright-blue);
+    color: #fff;
+    border-radius:10px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 20px var(--Desaturated-blue);
+    cursor: pointer;
+    transition: all 0.5s all;
+}
+.body-footer p{
+    padding:2rem;
+}
+.annual-plan{
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 90%; */
+    background: var(--Very-pale-blue);
+    align-content: center;
+    margin: 0 2rem 0 2rem;
+    border-radius: 10px;
+}
+.annual-plan .icon, .annual-plan .dc, .annual-plan .link{
+    display: inline-flex;
+}
+.annual-plan .dc{
+    align-items: center;
+    flex-basis: 60%;
+    padding-bottom: 1rem;
+
+}
+.annual-plan .link{
+    align-items: center;
+}
+.annual-plan .icon{
+    align-items: center;
+    flex-basis: 20%;
+}
+.annual-plan .dc span{
+    display:block;
+    color: var(--Desaturated-blue);
+}
+.annual-plan .link a{
+    text-decoration: none;
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    transition: all 0.2 ease-in-out;
+}
+.annual-plan .link a:hover{
+    border-bottom:none;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.body-footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
+}
+.body-footer a:hover{
+    opacity: 0.6;
+}
+.attribution{
+    font-size: 11px; text-align: center;
+    margin-bottom: 4REM; 
+}
+.attribution a{
+     color: hsl(228, 45%, 44%);
+}
+@media(max-width:375px){
+    .card{
+        width: 300px;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+        text-align: center;
+    }
+    .btn{
+        border: none;
+        font-size: 1rem;
+        width: 90%;
+        margin:1rem 0rem 0 0rem;
+        text-align: center;
+        background:var(--Bright-blue);
+        color: #fff;
+        border-radius:10px;
+        padding: 1rem 2rem;
+        box-shadow: 0px 4px 20px var(--Desaturated-blue);
+        cursor: pointer;
+        transition: all 0.5s all;
+    }
+}
